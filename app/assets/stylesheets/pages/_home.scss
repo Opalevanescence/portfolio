@@ -4,22 +4,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  ul {
-    width: 100vw;
-    text-align: center;
-  }
-
-  li {
-    color: white;
-  }
-
-  a:hover {
-    color: $blue;
-    text-decoration: none;
-  }
+  position: relative;
 
   h1 {
+    position: relative;
+    right: 60%;
+    top: 35vh;
     color: white;
     text-align: right;
   }
