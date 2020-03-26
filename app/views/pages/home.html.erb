@@ -1,2 +1,95 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="section">
+  <ul>
+    <li><%= link_to "HOME", "#" %></li> |
+    <li><%= link_to "PROJECTS", "#"  %></li> |
+    <li><%= link_to "WRITING", "#"  %></li> |
+    <li><%= link_to "ABOUT", "#" %></li> |
+    <li><%= link_to "CONTACT", "#" %></li>
+  </ul>
+  <div class="landing-words">
+    <h1>Full Stack Developer</h1>
+    <h1>Content Creator</h1>
+    <h1>Freelancer</h1>
+  </div>
+</div>
+<div class="section section-white">
+  <h2>Projects</h2>
+  <div class="projects">
+    <% @projects.each do |project| %>
+      <div class="project">
+        <div class="project-description">
+          <h4><%= project.name %></h4>
+          <p><%= project.sentence %></p>
+        </div>
+        <!-- image goes here -->
+        <!-- overlying link goes here -->
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="section section-blue">
+  <h2>Writing</h2>
+  <div class="writings">
+    <div class="writing">
+      <img src="" alt="">
+      <div>
+        <h4></h4>
+        <p></p>
+        <%= link_to "", "#" %>
+      </div>
+    </div>
+    <div class="writing">
+      <img src="" alt="">
+      <div>
+        <h4></h4>
+        <p></p>
+        <%= link_to "", "#" %>
+      </div>
+    </div>
+    <div class="writing">
+      <img src="" alt="">
+      <div>
+        <h4></h4>
+        <p></p>
+        <%= link_to "", "#" %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section-white">
+  <h2>About</h2>
+  <div class="d-flex">
+   <img src="" alt="">
+   <p></p>
+  </div>
+  <div class="section-sub">
+    <h3>Languages</h3>
+    <ul>
+      <li><img src="" alt=""></li>
+      <li><img src="" alt=""></li>
+      <li><img src="" alt=""></li>
+      <li><img src="" alt=""></li>
+      <li><img src="" alt=""></li>
+    </ul>
+  </div>
+  <div class="section-sub">
+    <h3>Interests</h3>
+    <ul>
+      <li>Food</li>
+      <li>Dance</li>
+      <li>Games</li>
+      <li>Travel</li>
+    </ul>
+  </div>
+</div>
+<div class="section section-white">
+  <h2>Contact</h2>
+  <p>Feel free to connect with me using the form below or any of the links provided.</p>
+  <!-- Form here -->
+  <ul>
+    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+    <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+    <li><i class="fa fa-github" aria-hidden="true"></i></li>
+  </ul>
+</div>
