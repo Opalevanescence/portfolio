@@ -6,7 +6,7 @@
     <li><%= link_to "ABOUT", "#" %></li> |
     <li><%= link_to "CONTACT", "#" %></li>
   </ul>
-  <div class="landing-words">
+  <div class="home-landing-words">
     <h1>Full Stack Developer</h1>
     <h1>Content Creator</h1>
     <h1>Freelancer</h1>
@@ -14,10 +14,10 @@
 </div>
 <div class="section section-white">
   <h2>Projects</h2>
-  <div class="projects">
+  <div class="card-projects">
     <% @projects.each do |project| %>
-      <div class="project">
-        <div class="project-description">
+      <div class="card-project">
+        <div class="card-project-description">
           <h4><%= project.name %></h4>
           <p><%= project.sentence %></p>
         </div>
@@ -29,8 +29,8 @@
 </div>
 <div class="section section-blue">
   <h2>Writing</h2>
-  <div class="writings">
-    <div class="writing">
+  <div class="card-writings">
+    <div class="card-writing">
       <img src="" alt="">
       <div>
         <h4></h4>
@@ -38,7 +38,7 @@
         <%= link_to "", "#" %>
       </div>
     </div>
-    <div class="writing">
+    <div class="card-writing">
       <img src="" alt="">
       <div>
         <h4></h4>
@@ -46,7 +46,7 @@
         <%= link_to "", "#" %>
       </div>
     </div>
-    <div class="writing">
+    <div class="card-writing">
       <img src="" alt="">
       <div>
         <h4></h4>
@@ -64,7 +64,7 @@
   </div>
   <div class="section-sub">
     <h3>Favorite Tools</h3>
-    <ul class="about-tools">
+    <ul class="home-tools">
       <li><%= image_tag "Adobe-After-Effects.png", alt: "AE logo" %></li>
       <li><%= image_tag "Adobe-Illustrator.png", alt: "AI logo" %></li>
       <li><%= image_tag "Adobe-Photoshop.png", alt: "PS logo" %></li>
@@ -86,7 +86,7 @@
   </div>
   <div class="section-sub">
     <h3>Interests</h3>
-    <ul class="about-interests">
+    <ul class="home-interests">
       <li><%= image_tag "icon-restaurant.png", alt: "Food Icon" %>Food</li>
       <li><%= image_tag "icon-disco-ball.png", alt: "Dance Icon" %>Dance</li>
       <li><%= image_tag "icon-poker.png", alt: "Game Icon" %>Games</li>
@@ -98,7 +98,7 @@
   <h2>Contact</h2>
   <p>Feel free to connect with me using the form below or any of the links provided.</p>
   <!-- Form here -->
-  <ul>
+  <ul class="social-media-icons">
     <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
     <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
     <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
