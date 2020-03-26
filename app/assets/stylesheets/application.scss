@@ -13,19 +13,24 @@
 @import "pages/index";
 
 h1, h2, h3, h4, h5 {
-
+  font-family: 'Oswald', sans-serif;
 }
 
 p {
-
+  font-family: 'EB Garamond', serif;
 }
 
 ul {
+  display: flex;
+  text-align: center;
+}
 
+li {
+  list-style: none;
 }
 
 .section {
-
+  min-height: 100vh;
 }
 
 .section-white {
@@ -33,17 +38,16 @@ ul {
 }
 
 .section-blue {
-  background-color: $blue;
+  background-color: $light-blue;
 }
 
 .section-sub {
-
-  // or image idk
-  li {
-
+  height: 200px;
+  img {
+    height: 50px;
   }
 }
 
-.social-media-icons {
-
+.social-media-icons > li {
+  height: 15px;
 }
