@@ -67,6 +67,17 @@ a:hover {
   }
 }
 
-.social-media-icons > li {
-  height: 15px;
+.social-media-icons {
+  margin: 0 auto;
+  font-size: 45px;
+
+  ul {
+    display: flex;
+    justify: space-between;
+    width: 50%;
+  }
+
+  li:hover {
+    color: $dark-blue;
+  }
 }

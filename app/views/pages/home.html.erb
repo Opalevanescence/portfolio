@@ -5,6 +5,8 @@
     <h1>Freelancer</h1>
   </div>
 </div>
+
+
 <div class="section section-white">
   <h2>Projects</h2>
   <div class="card-projects">
@@ -20,6 +22,8 @@
     <% end %>
   </div>
 </div>
+
+
 <div class="section section-blue">
   <h2>Writing</h2>
   <div class="card-writings">
@@ -58,12 +62,15 @@
     </div>
   </div>
 </div>
+
+
 <div class="section section-white">
   <h2>About</h2>
   <div class="home-about">
    <%= image_tag "jess-profile.jpg", alt: "profile picture of jessica", class: "home-profile" %>
    <p></p>
   </div>
+
   <div class="section-sub">
     <h3 class="mt-5">Favorite Tools</h3>
     <ul class="home-tools">
@@ -86,6 +93,7 @@
       <li><%= image_tag "postgresql.png", alt: "PostgreSQL logo" %></li>
     </ul>
   </div>
+
   <div class="section-sub">
     <h3>Interests</h3>
     <ul class="home-interests">
@@ -108,17 +116,39 @@
     </ul>
   </div>
 </div>
+
+
 <div class="section section-blue">
   <h2>Contact</h2>
   <p class="text-center">Feel free to connect with me using the form below or any of the links provided.</p>
-  <!-- Form here -->
+  <%= simple_form_for @contact do |f| %>
+      <% if flash[:error].present? %>
+        <p><%= flash[:error] %></p>
+      <% end %>
+
+      <div class="form-contact">
+        <%= f.label :name %></br>
+        <%= f.text_field  :name, required: true, class: "form-input" %></br>
+
+        <%= f.label :email %></br>
+        <%= f.text_field :email, required: true, class: "form-input" %></br>
+
+        <%= f.label :message %></br>
+        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "form-input"%></br>
+
+        <%= f.button :submit, 'Send Message', class: "btn-box" %>
+      </div>
+
+    <% end %>
   <ul class="social-media-icons">
-    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
-    <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-    <li><i class="fa fa-github" aria-hidden="true"></i></li>
+    <li><i class="fab fa-facebook" aria-hidden="true"></i></li>
+    <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
+    <li><i class="fab fa-linkedin" aria-hidden="true"></i></li>
+    <li><i class="fab fa-github" aria-hidden="true"></i></li>
   </ul>
 </div>
+
+
 <div class="home-footer section-blue">
   <p>Website designed and coded with ❤️ by Jessica DeWitt</p>
   <p>Pink gradient icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> on <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a></p>
