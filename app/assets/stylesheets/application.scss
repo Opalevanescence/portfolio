@@ -41,7 +41,7 @@ li {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .section {
@@ -59,7 +59,9 @@ a:hover {
 }
 
 .section-sub {
-  height: 200px;
+  min-height: 200px;
+  margin-bottom: 20px;
+
   img {
     height: 50px;
   }
