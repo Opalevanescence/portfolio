@@ -121,25 +121,7 @@
 <div class="section section-blue">
   <h2>Contact</h2>
   <p class="text-center">Feel free to connect with me using the form below or any of the links provided.</p>
-  <%= simple_form_for @contact do |f| %>
-      <% if flash[:error].present? %>
-        <p><%= flash[:error] %></p>
-      <% end %>
-
-      <div class="form-contact">
-        <%= f.label :name %></br>
-        <%= f.text_field  :name, required: true, class: "form-input" %></br>
-
-        <%= f.label :email %></br>
-        <%= f.text_field :email, required: true, class: "form-input" %></br>
-
-        <%= f.label :message %></br>
-        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "form-input"%></br>
-
-        <%= f.button :submit, 'Send Message', class: "btn-box" %>
-      </div>
-
-    <% end %>
+  <%= link_to "Contact Form", contact_new_path, class: "btn-box" %>
   <ul class="social-media-icons">
     <li><i class="fab fa-facebook" aria-hidden="true"></i></li>
     <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
