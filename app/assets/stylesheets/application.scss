@@ -11,3 +11,73 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+h1, h4, h5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  padding: 10px;
+  text-decoration: underline;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+}
+
+ul {
+  display: flex;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.section {
+  padding: 25px;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.section-white {
+  background-color: white;
+}
+
+.section-blue {
+  background-color: $light-blue;
+}
+
+.section-sub {
+  min-height: 200px;
+  margin-bottom: 20px;
+
+  img {
+    height: 50px;
+  }
+}
+
+.social-media-icons {
+  margin: 0 auto;
+  font-size: 45px;
+
+  ul {
+    display: flex;
+    justify: space-between;
+    width: 50%;
+  }
+
+  li:hover {
+    color: $dark-blue;
+  }
+}

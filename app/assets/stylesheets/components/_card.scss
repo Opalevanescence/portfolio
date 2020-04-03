@@ -1,0 +1,59 @@
+.card-projects {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.card-project {
+  margin: 2%;
+  padding: 10px;
+  width: 29%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-project-description {
+  background-color: $light-blue;
+  padding: 8px;
+}
+
+.card-writings {
+}
+
+.card-writing {
+  background-color: white;
+  // margin: 15px;
+  margin: 15px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  width: 70%;
+
+  img {
+    margin-right: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    height: 150px;
+    width: 225px;
+    object-fit: cover;
+  }
+
+  i {
+    // rgba for $blue
+    background-color: rgba(209, 216, 233, 0.75);
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    padding: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: white;
+  }
+
+  .btn-box {
+    margin-bottom: 16px;
+  }
+}
