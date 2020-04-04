@@ -12,12 +12,12 @@
   <div class="card-projects">
     <% @projects.each do |project| %>
       <div class="card-project">
-        <div class="card-project-description">
-          <h4><%= project.name %></h4>
-          <p><%= project.sentence %></p>
+        <div class="card-project-description card-project-img-<%= project.name.split.first%>">
+          <div class="hidden">
+            <h4><%= project.name %></h4>
+            <p><%= project.sentence %></p>
+          </div>
         </div>
-        <!-- image goes here -->
-        <!-- overlying link goes here -->
       </div>
     <% end %>
   </div>
@@ -135,3 +135,8 @@
   <p>Website designed and coded with ❤️ by Jessica DeWitt</p>
   <p>Pink gradient icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> on <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a></p>
 </div>
+
+<!-- js for hover feature on the projects -->
+<script>
+
+</script>
