@@ -1,0 +1,24 @@
+<div class="section">
+  <div class="d-flex">
+
+    <div class="project-info">
+      <h3><%= @project.name %></h3>
+      <div>
+        <h5>The Idea</h5>
+        <p><%= @project.idea %></p>
+        <br>
+        <h5>The Tools</h5>
+        <p><%= @project.tools %></p>
+      </div>
+    </div>
+
+    <div class="project-display">
+      <%= render "shared/carousel" %>
+      <div>
+        <%= link_to "GH SOURCE CODE", @project.codelink, class: "btn-box" %>
+        <%= link_to "DEPLOYED PAGE", @project.sitelink, class: "btn-box"  %>
+      </div>
+    </div>
+
+  </div>
+</div>

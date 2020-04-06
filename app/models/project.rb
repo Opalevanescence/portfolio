@@ -1,5 +1,5 @@
 class Project < ApplicationRecord
-  def show
+  def img
+    self.name.split.first
   end
-
 end
