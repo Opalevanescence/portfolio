@@ -1,0 +1,9 @@
+.img-hidden:hover {
+  img {
+    visibility: hidden;
+  }
+
+  .card-project-description {
+    z-index: 1;
+  }
+}

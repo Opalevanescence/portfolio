@@ -11,13 +11,14 @@
   <h2>Projects</h2>
   <div class="card-projects">
     <% @projects.each do |project| %>
-      <div class="card-project">
-        <div class="card-project-description">
-          <h4><%= project.name %></h4>
-          <p><%= project.sentence %></p>
+      <div class="card-project img-hidden">
+        <div class="card-project-details">
+          <%= image_tag "project-" + project.name.split.first + ".png", alt: "image of project" %>
+          <div class="card-project-description">
+            <h4><%= project.name %></h4>
+            <p><%= project.sentence %></p>
+          </div>
         </div>
-        <!-- image goes here -->
-        <!-- overlying link goes here -->
       </div>
     <% end %>
   </div>
@@ -26,7 +27,7 @@
 
 <div class="section section-blue">
   <h2>Writing</h2>
-  <div class="card-writings">
+  <div>
     <div class="card-writing">
       <div class="position-relative">
         <i class="fab fa-medium" aria-hidden="true"></i>
