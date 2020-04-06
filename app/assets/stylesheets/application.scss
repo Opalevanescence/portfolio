@@ -87,7 +87,11 @@ a:hover {
   padding: 0px;
   justify-content: space-between;
 
-  li:hover {
+  a {
+    color: black;
+  }
+
+  a:hover {
     color: $dark-blue;
   }
 }
