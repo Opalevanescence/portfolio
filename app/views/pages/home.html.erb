@@ -11,8 +11,8 @@
   <h2>Projects</h2>
   <div class="card-projects">
     <% @projects.each do |project| %>
-      <div class="card-project">
-        <div class="card-project-details img-hidden">
+      <div class="card-project img-hidden">
+        <div class="card-project-details">
           <%= image_tag "project-" + project.name.split.first + ".png", alt: "image of project" %>
           <div class="card-project-description">
             <h4><%= project.name %></h4>
@@ -27,7 +27,7 @@
 
 <div class="section section-blue">
   <h2>Writing</h2>
-  <div class="card-writings">
+  <div>
     <div class="card-writing">
       <div class="position-relative">
         <i class="fab fa-medium" aria-hidden="true"></i>
@@ -136,8 +136,3 @@
   <p>Website designed and coded with ❤️ by Jessica DeWitt</p>
   <p>Pink gradient icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> on <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a></p>
 </div>
-
-<!-- js for hover feature on the projects -->
-<script>
-
-</script>
