@@ -80,14 +80,26 @@ a:hover {
   }
 }
 
-.social-media-icons {
-  width: 50%;
+.social-media-icons, .footer-social-media-icons {
   margin: 0 auto;
-  font-size: 45px;
   padding: 0px;
   justify-content: space-between;
 
-  li:hover {
+  a {
+    color: black;
+  }
+
+  a:hover {
     color: $dark-blue;
   }
+}
+
+.social-media-icons {
+  width: 50%;
+  font-size: 45px;
+}
+
+.footer-social-media-icons {
+  width: 20%;
+  font-size: 35px;
 }
