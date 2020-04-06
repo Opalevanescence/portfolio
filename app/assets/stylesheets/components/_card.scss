@@ -10,35 +10,28 @@
   margin: 2%;
   padding: 10px;
   width: 29%;
-  // height of project should match the height of the background image
   height: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
-.card-project-description {
+.card-project-details {
   background-color: $light-blue;
   background-size: cover;
+  position: relative;
+
+  img {
+    width: 100%;
+    // img should be its full height
+    // height: auto;
+  }
+}
+
+.card-project-description {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
   padding: 8px;
-}
-
-.card-project-img-Mister, .card-project-img-Fringe, .card-project-img-Plantopia, .card-project-img-Portfolio {
-  color: transparent;
-}
-
-.card-project-img-Mister {
-  background-image: url('project-cocktails.png');
-}
-
-.card-project-img-Fringe {
-  background-image: url('project-fringe.png');
-}
-
-.card-project-img-Plantopia {
-  background-image: url('project-plantopia.png');
-}
-
-.card-project-img-Portfolio {
-  background-image: url('project-plantopia.png');
 }
 
 .card-writings {

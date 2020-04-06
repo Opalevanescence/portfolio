@@ -1,0 +1,9 @@
+.img-hidden {
+  img {
+    visibility: hidden;
+  }
+
+  .card-project-description {
+    z-index: 1;
+  }
+}

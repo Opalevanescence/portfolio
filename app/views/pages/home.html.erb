@@ -12,8 +12,9 @@
   <div class="card-projects">
     <% @projects.each do |project| %>
       <div class="card-project">
-        <div class="card-project-description card-project-img-<%= project.name.split.first%>">
-          <div class="hidden">
+        <div class="card-project-details img-hidden">
+          <%= image_tag "project-" + project.name.split.first + ".png", alt: "image of project" %>
+          <div class="card-project-description">
             <h4><%= project.name %></h4>
             <p><%= project.sentence %></p>
           </div>
