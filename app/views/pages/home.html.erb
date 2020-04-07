@@ -9,21 +9,27 @@
 
 <div class="section section-white" id="projects">
   <h2>Projects</h2>
+  <p class="text-center">Click a project to find out more.</p>
 
   <div class="card-projects">
     <% @projects.each do |project| %>
       <div class="card-project img-hidden">
         <div class="card-project-details">
+
+          <!-- Image and information for the card-->
           <%= image_tag "project-" + project.img + ".png", alt: "image of project" %>
           <div class="card-project-description">
             <h4><%= project.name %></h4>
             <p><%= project.sentence %></p>
           </div>
+
+          <!-- Overlayed link to projects show page -->
+          <%= link_to project_path(project) do %>
+            <div class="hid-link"></div>
+          <% end %>
+
         </div>
       </div>
-      <%= link_to project_path(project) do %>
-        <div class="hid-link"></div>
-      <% end %>
     <% end %>
   </div>
 
