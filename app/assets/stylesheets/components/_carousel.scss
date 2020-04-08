@@ -1,5 +1,12 @@
-.carousel-item-prev, .carousel-item, .carousel-item img {
-  width: 574px;
-  height: 383px;
+.carousel-item-prev, .carousel-item img {
+  width: 514px;
+  height: 274px;
+}
+
+.carousel-item img {
   object-fit: cover;
+}
+
+.carousel-inner {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
