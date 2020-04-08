@@ -13,22 +13,31 @@
 
   <div class="card-projects">
     <% @projects.each do |project| %>
+
       <div class="card-project img-hidden">
+          <% if project == @projects[0] || project == @projects[2] || project == @projects[3] %>
+            <div class="card-project-details column">
+              <% else %>
         <div class="card-project-details">
-
-          <!-- Image and information for the card-->
-          <%= image_tag "project-" + project.img + ".png", alt: "image of project" %>
-          <div class="card-project-description">
-            <h4><%= project.name %></h4>
-            <p><%= project.sentence %></p>
-          </div>
-
-          <!-- Overlayed link to projects show page -->
-          <%= link_to project_path(project) do %>
-            <div class="hid-link"></div>
           <% end %>
 
+
+            <!-- Image and information for the card-->
+            <%= image_tag "project-" + project.img + ".png", alt: "image of project" %>
+            <div class="card-project-description">
+              <h4><%= project.name %></h4>
+              <p><%= project.sentence %></p>
+            </div>
+
+            <!-- Overlayed link to projects show page -->
+            <%= link_to project_path(project) do %>
+              <div class="hid-link"></div>
+            <% end %>
+
         </div>
+          <%# if project == @projects[1] || project == @projects[2] || project == @projects[3] %>
+            <!-- </div> -->
+          <%# end %>
       </div>
     <% end %>
   </div>
