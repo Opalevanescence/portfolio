@@ -1,12 +1,11 @@
 <!-- Carousel images using Bootstrap -->
-
 <div id="carousel-example-1z" class="carousel slide m-4" data-ride="carousel" data-interval="false">
 
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
     <% ind_counter = 1 %>
-    <%= (@num_of_images - 1).times do %>
+    <% (@num_of_images - 1).times do %>
       <li data-target="#carousel-example-1z" data-slide-to="<%= ind_counter %>"></li>
       <% ind_counter += 1 %>
     <% end %>
