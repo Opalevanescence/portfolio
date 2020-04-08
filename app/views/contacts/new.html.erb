@@ -7,18 +7,15 @@
         <p><%= flash[:error] %></p>
       <% end %>
 
-      <%= f.label :name %></br>
-      <%= f.text_field  :name, required: true, class: "form-input" %></br>
+      <%= f.input  :name, required: true, class: "form-input" %></br>
 
-      <%= f.label :email %></br>
-      <%= f.text_field :email, required: true, class: "form-input" %></br>
+      <%= f.input :email, required: true, class: "form-input" %></br>
 
-      <%= f.label :message %></br>
-      <%= f.text_area :message, as: :text, rows: 8, cols: 40, required: true, class: "form-input"%></br>
+      <%= f.input :message, as: :text, required: true, class: "form-input"%></br>
 
       <div class="hidden">
         <%= f.label :nickname %> <br>
-        <%= f.text_field :nickname, hint: 'leave this field blank' %>
+        <%= f.input :nickname, hint: 'leave this field blank' %>
       </div>
 
       <%= f.button :submit, 'Send Message', class: "btn-box" %>
