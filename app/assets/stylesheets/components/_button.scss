@@ -1,15 +1,20 @@
 .btn-box {
-  border: 1px solid $dark-blue;
-  border-radius: 5px;
-  padding: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+  border: 1px solid $dark-blue !important;
+  border-radius: 5px !important;
+  padding: 8px !important;
   padding-left: 24px;
   padding-right: 24px;
-  color: $dark-blue;
+  color: $dark-blue !important;
 
   &:hover {
     background-color: $light-blue;
     color: $dark-blue;
   }
+}
+
+.btn-hover-white:hover {
+  background-color: white;
 }
 
 .btn-center {

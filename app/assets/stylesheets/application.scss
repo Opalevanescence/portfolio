@@ -80,6 +80,10 @@ a:hover {
   }
 }
 
+.section-w-footer {
+  min-height: calc(100vh - 80px) !important;
+}
+
 .social-media-icons, .footer-social-media-icons {
   margin: 0 auto;
   padding: 0px;

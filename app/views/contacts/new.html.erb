@@ -1,4 +1,4 @@
-<div class="section section-blue">
+<div class="section section-blue section-w-footer">
   <h2>Contact</h2>
   <p class="text-center">Feel free to connect with me using the form below or any of the links provided.</p>
   <div class="form-contact">
@@ -7,23 +7,25 @@
         <p><%= flash[:error] %></p>
       <% end %>
 
-      <%= f.label :name %></br>
-      <%= f.text_field  :name, required: true, class: "form-input" %></br>
-
-      <%= f.label :email %></br>
-      <%= f.text_field :email, required: true, class: "form-input" %></br>
-
-      <%= f.label :message %></br>
-      <%= f.text_area :message, as: :text, rows: 8, cols: 40, required: true, class: "form-input"%></br>
+      <div class="form-inputs">
+        <div class="form-group w100 string required user_first_name">
+          <input class="form-control string first_name required special w100" autocomplete="name" autofocus="autofocus" required="required" aria-required="true" placeholder="Full Name" type="text">
+        </div>
+        <div class="form-group w100 email required user_email">
+          <input class="form-control string email required special w100" autocomplete="email" autofocus="autofocus" required="required" aria-required="true" placeholder="Email" type="email" value="">
+        </div>
+        <div class="form-group w100 required">
+          <textarea class="form-control required special w100" autocomplete="email" autofocus="autofocus" required="required" aria-required="true" placeholder="Message" type="email" value="" id="user_email"></textarea>
+        </div>
 
       <div class="hidden">
-        <%= f.label :nickname %> <br>
         <%= f.text_field :nickname, hint: 'leave this field blank' %>
       </div>
 
-      <%= f.button :submit, 'Send Message', class: "btn-box" %>
+      <%= f.button :submit, 'Send Message', class: "btn-box btn-hover-white" %>
     <% end %>
   </div>
-<%= render "shared/footer" %>
 </div>
+</div>
+<div class="section-blue"><%= render "shared/footer" %></div>
 
