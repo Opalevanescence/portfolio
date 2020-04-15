@@ -1,5 +1,5 @@
 meta_product_name: "Code and Writing Portfolio"
 meta_title: "Jessica's Portfolio"
-meta_description: "Explore the projects I've worked on as a professional developer and writer."
-meta_image: "cover.png" # should exist in `app/assets/images/`
-twitter_account: "@Opalevanescence"   # required for Twitter Cards
+meta_description: "View some of the projects I've worked on as a professional developer and writer. Contact me to discover more about what I can offer you and your organization."
+meta_image: "portfolio-back.jpg"
+twitter_account: "@Opalevanescence"
