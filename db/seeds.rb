@@ -30,7 +30,7 @@ four = Project.new(
   sentence: "My own site!",
   idea: "When I took the Full Stack coding course at Le Wagon, I knew that continuing to use my wix-made website would be extremely lazy, so I turned my enthusiasm for coding to the next obvious task: showcasing my skills and abilitities. Hopefully you like what you see and as I continue to develop more skills I will be able to use them to improve and continue developing this site.",
   tools: "This site is made with Ruby on Rails and styled with SCSS. Simple Contact Form is used for the contact page and all the projects are from a PostgreSQL (not hardcoded). I originially created the design for the site on Figma before implementing it with code.",
-  images: ["https://imgur.com/EgRIc8D", "https://imgur.com/YW3Lm0X", "https://imgur.com/3qtGbrP", "https://imgur.com/JPsIEKW"],
+  images: ["https://imgur.com/EgRIc8D.png", "https://imgur.com/YW3Lm0X.png?1", "https://imgur.com/3qtGbrP.png", "https://imgur.com/JPsIEKW.png"],
   codelink: "https://github.com/Opalevanescence/portfolio",
   sitelink: "jessicaadewitt.com")
 
