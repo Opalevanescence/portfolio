@@ -12,7 +12,7 @@
   <p class="text-center">Click a project to find out more.</p>
 
   <div class="card-projects">
-    <% @projects.each do |project| %>
+    <% @projects.each_with_index do |project, index| %>
 
       <div class="card-project img-hidden">
           <% if project == @projects[0] || project == @projects[2] || project == @projects[3] %>
@@ -23,7 +23,7 @@
 
 
             <!-- Image and information for the card-->
-            <%= image_tag "project#{0}.png", alt: "image of project" %>
+            <%= image_tag "project#{index}.png", alt: "image of project" %>
             <div class="card-project-description">
               <h4><%= project.name %></h4>
               <p><%= project.sentence %></p>
