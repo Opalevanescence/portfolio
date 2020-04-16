@@ -12,6 +12,7 @@
   <p class="text-center">Click a project to find out more.</p>
 
   <div class="card-projects">
+    <%= image_tag "project-Fringe.png", alt: "image of project" %>
     <% @projects.each do |project| %>
 
       <div class="card-project img-hidden">
@@ -23,7 +24,7 @@
 
 
             <!-- Image and information for the card-->
-            <%= image_tag "project-Fringe.png", alt: "image of project" %>
+            <%#= image_tag "project-Fringe.png", alt: "image of project" %>
             <div class="card-project-description">
               <h4><%= project.name %></h4>
               <p><%= project.sentence %></p>
