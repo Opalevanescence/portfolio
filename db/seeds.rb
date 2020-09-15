@@ -1,3 +1,5 @@
+Project.destroy_all
+
 one = Project.new(
   name: "Mister Cocktail",
   sentence: "Web page displaying a variety of cocktail recipies.",
@@ -37,4 +39,4 @@ three = Project.new(
 one.save
 two.save
 three.save
-four.save
+# four.save
