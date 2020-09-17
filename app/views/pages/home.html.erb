@@ -15,15 +15,9 @@
     <% @projects.each_with_index do |project, index| %>
 
       <div class="card-project img-hidden">
-          <% if project == @projects[0] || project == @projects[2] || project == @projects[3] %>
-            <div class="card-project-details column">
-              <% else %>
         <div class="card-project-details">
-          <% end %>
-
-
-            <!-- Image and information for the card-->
-            <%= image_tag "project#{index}.png", alt: "image of project" %>
+            <!-- Image and information for the card -->
+            <%= image_tag project.images[0], alt: "image of project" %>
             <div class="card-project-description">
               <h4><%= project.name %></h4>
               <p><%= project.sentence %></p>
@@ -33,12 +27,9 @@
             <%= link_to project_path(project) do %>
               <div class="hid-link"></div>
             <% end %>
-
         </div>
-          <%# if project == @projects[1] || project == @projects[2] || project == @projects[3] %>
-            <!-- </div> -->
-          <%# end %>
       </div>
+
     <% end %>
   </div>
 
