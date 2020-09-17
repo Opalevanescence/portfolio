@@ -37,46 +37,7 @@
 
 
 <div class="section section-blue" id="writing">
-  <h2>Writing</h2>
-  <div>
-
-    <div class="card-writing">
-      <div class="position-relative">
-        <i class="fab fa-medium" aria-hidden="true"></i>
-        <%= image_tag "Sustainable-Fashion.jpg", alt: "picture of Startup Grind gathering" %>
-      </div>
-      <div>
-        <h4>Sustainable Fashion Starts Small</h4>
-        <p>Description of a Startup Grind event on the fashion industry in Oslo. Both companies have unique and interesting methods of behaving sustainably.</p>
-        <%= link_to "Read the article", "https://medium.com/startup-grind-oslo/sustainable-fashion-starts-small-6fc26f1b0fbd", class: "btn-box" %>
-      </div>
-    </div>
-
-    <div class="card-writing">
-      <div class="position-relative">
-        <i class="fab fa-youtube-square" aria-hidden="true"></i>
-        <%= image_tag "fringe-presentation.jpg", alt: "picture of Jessica presenting My Fringe Planner" %>
-      </div>
-      <div>
-        <h4>MyFringePlanner Presentation</h4>
-        <p>At the end of Le Wagon, I presented MyFringePlanner with the help of Dee to a large audience and demonstrated the key user journeys for our application.</p>
-        <%= link_to "Watch the video", "https://www.youtube.com/watch?v=L9Pvj2iJ6po&list=LLCKHwQkBDzhHRKgcGbfL54Q&index=2&t=39m50s", class: "btn-box" %>
-      </div>
-    </div>
-
-    <div class="card-writing">
-      <div class="position-relative">
-        <i class="fab fa-medium" aria-hidden="true"></i>
-        <%= image_tag "ml-article.png", alt: "picture of alpacas sharing ideas" %>
-      </div>
-      <div>
-        <h4>Millenials Improve Workplace Communication</h4>
-        <p>While working for ManageLabs I learned a lot about workplace communication and how different team members can contribute or detract from clear communication. </p>
-        <%= link_to "Read the article", "https://www.managelabs.com/library/how-millennials-have-improved-workplace-communication", class: "btn-box" %>
-      </div>
-    </div>
-
-  </div>
+  <%= render 'shared/writing' %>
 </div>
 
 
