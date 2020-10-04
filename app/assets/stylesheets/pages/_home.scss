@@ -35,13 +35,37 @@
 .home-tools {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0 auto;
   padding-left: 0px;
   width: 95%;
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
 
   li {
+    font-size: 60px;
     padding: 8px;
+    color: $pink;
+  }
+
+  // li:hover {
+  //   color: $dark-blue;
+  // }
+
+  .svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .svg:hover {
+    fill: $dark-blue;
   }
 }
 
