@@ -17,6 +17,8 @@ gem 'webpacker'
 
 # Form for "Contact Us"
 gem 'mail_form'
+# Do inline svg links
+gem 'inline_svg'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
